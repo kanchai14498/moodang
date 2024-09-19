@@ -4,9 +4,9 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(20)
-  const imageSrc = count < 600 ? 'https://static.thairath.co.th/media/dFQROr7oWzulq5Fa6rBpqgiLsh8iZREh2UsP5iLS3j3nr8i0U0a3jUb1Spi4ltheo6O.webp' : 'https://scontent.fcnx2-1.fna.fbcdn.net/v/t39.30808-6/394401530_2441361536069064_8091065708322390674_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHfL96OX-JO2vjhopyP8dEXSEWiJ0t93XNIRaInS33dc72ZTd8QIzGEubsiEAE2VTw9X3H0Nrxr-mWfIKDG6aD7&_nc_ohc=PwHoaeXG7UUQ7kNvgEn1v2K&_nc_ht=scontent.fcnx2-1.fna&_nc_gid=AMvycqXnfPgXE9cWY5x3Ffs&oh=00_AYD47sUYuAI9YfHnwBKqE0IiWbWVutmffKeT2SgOixZdQg&oe=66F0E498'
-  const x = count <= 600 ? count : 600
+  const [count, setCount] = useState(200)
+  const imageSrc = count < 400 ? 'https://static.thairath.co.th/media/dFQROr7oWzulq5Fa6rBpqgiLsh8iZREh2UsP5iLS3j3nr8i0U0a3jUb1Spi4ltheo6O.webp' : 'https://scontent.fcnx2-1.fna.fbcdn.net/v/t39.30808-6/394401530_2441361536069064_8091065708322390674_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHfL96OX-JO2vjhopyP8dEXSEWiJ0t93XNIRaInS33dc72ZTd8QIzGEubsiEAE2VTw9X3H0Nrxr-mWfIKDG6aD7&_nc_ohc=PwHoaeXG7UUQ7kNvgEn1v2K&_nc_ht=scontent.fcnx2-1.fna&_nc_gid=AMvycqXnfPgXE9cWY5x3Ffs&oh=00_AYD47sUYuAI9YfHnwBKqE0IiWbWVutmffKeT2SgOixZdQg&oe=66F0E498'
+  const x = count <= 400 ? count : 400
 
 
 
@@ -15,17 +15,18 @@ function App() {
     <>
 
       <div className='box-j' ><img className='j1' src={imageSrc} alt="" width={40 + x}   height={30 + x } /></div>
-      
-      <div className="card">
-      <h1>LEVEL {count - 20} </h1> 
-        
-       
+      <div>
+          <img className='pppp' src="https://static.vecteezy.com/system/resources/previews/006/827/242/non_2x/down-arrow-icon-sign-symbol-logo-vector.jpg" alt="" />
+      </div>
+      <div className="card ">
+      <h2>LEVEL {count - 20} </h2> 
       </div>
       <div>
         <a  target="_blank">
           <img src="https://www.foodgallery.co.th/wp-content/uploads/2018/06/Apple-gala.jpg"
  className="logo" onClick={() => setCount((count) => count + 10) }  />
         </a>
+        
 
         <a>
           <img src="https://organic-village.co.th/wp-content/uploads/2021/11/1-Carrots-1.jpg"
